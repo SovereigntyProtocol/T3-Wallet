@@ -1,0 +1,12 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513 79" width="180" height="28">
+	<title>New Project</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 95px;fill: #d220f3;font-weight: 400;font-family: "DeliusSwashCaps-Regular", "Delius Swash Caps" } 
+		.t1 { font-size: 95px;fill: #d220f3;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+	</style>
+	<text id="T3 WALLET" style="transform: matrix(1,0,0,1,-357,4)" >
+		<tspan x="355.5" y="73.2" class="t0">T</tspan><tspan  y="73.2" class="t0">3</tspan><tspan  y="73.2" class="t0"> </tspan><tspan  y="73.2" class="t1">W</tspan><tspan  y="73.2" class="t1">A</tspan><tspan  y="73.2" class="t1">L</tspan><tspan  y="73.2" class="t1">L</tspan><tspan  y="73.2" class="t1">E</tspan><tspan  y="73.2" class="t1">T</tspan><tspan  y="73.2" class="t1">
+</tspan>
+	</text>
+</svg>
