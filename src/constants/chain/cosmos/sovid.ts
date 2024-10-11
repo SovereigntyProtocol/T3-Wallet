@@ -25,7 +25,7 @@ export const SOVID: CosmosChain = {
   },
   bech32Prefix: { address: 'ssi' },
   coinGeckoId: 'cosmos',
-  explorerURL: `https://identityforge.sovereignty.one`,
+  explorerURL: `https://authenticitynet.sovereignty.one/`,
   gasRate: {
     tiny: '0.00025',
     low: '0.0025',

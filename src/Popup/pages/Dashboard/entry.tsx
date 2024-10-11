@@ -113,23 +113,6 @@ export default function Entry() {
       </SubInfoContainer>
       <ChainListContainer>
         <ChainList>
-          {ethereumChainList.map((item) =>
-            ethereumNetworkList.map((network) => (
-              <EthereumChainItemLedgerCheck key={`${currentAccount.id}${item.chain.id}${network.id}`} chain={item.chain} network={network}>
-                <ErrorBoundary
-                  FallbackComponent={
-                    // eslint-disable-next-line react/no-unstable-nested-components
-                    (props) => <EthereumChainItemError {...props} chain={item.chain} network={network} />
-                  }
-                >
-                  <Suspense fallback={<EthereumChainItemSkeleton chain={item.chain} network={network} />}>
-                    <EthereumChainItem key={item.chain.id} chain={item.chain} network={network} />
-                  </Suspense>
-                </ErrorBoundary>
-              </EthereumChainItemLedgerCheck>
-            )),
-          )}
-
           {cosmosChainList.map((item) =>
             item.chain.isTerminated ? (
               <CosmosChainItemTerminated chain={item.chain} key={`${currentAccount.id}${item.chain.id}`} />
@@ -147,6 +130,23 @@ export default function Entry() {
                 </ErrorBoundary>
               </CosmosChainLedgerCheck>
             ),
+          )}
+
+          {ethereumChainList.map((item) =>
+            ethereumNetworkList.map((network) => (
+              <EthereumChainItemLedgerCheck key={`${currentAccount.id}${item.chain.id}${network.id}`} chain={item.chain} network={network}>
+                <ErrorBoundary
+                  FallbackComponent={
+                    // eslint-disable-next-line react/no-unstable-nested-components
+                    (props) => <EthereumChainItemError {...props} chain={item.chain} network={network} />
+                  }
+                >
+                  <Suspense fallback={<EthereumChainItemSkeleton chain={item.chain} network={network} />}>
+                    <EthereumChainItem key={item.chain.id} chain={item.chain} network={network} />
+                  </Suspense>
+                </ErrorBoundary>
+              </EthereumChainItemLedgerCheck>
+            )),
           )}
 
           {aptosChainList.map((item) =>
